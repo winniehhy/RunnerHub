@@ -1,0 +1,383 @@
+ body{
+  font-family:'Poppins', sans-serif;
+
+ }
+ .payment_home{
+   display:flex;
+    align-items:center;
+    justify-content: center;
+    height:50vh;
+    background-image: url(../img/payment_background.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+  
+  .paymentText_centered {
+   padding:20px;
+   color:#ffffff;
+   text-align: center;
+   font-size: 25px;
+   
+  }
+  .paymentText_centered p {
+    color: #716e6e;
+  }
+
+  .paymentText_centered h2 {
+    color: #ffffff;
+    margin-top: 20px;
+  }
+
+  .payment_button_container{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  .get-started {
+    color: #fff;
+    border:2px solid transparent;
+    cursor:pointer;
+    font-size:25px;
+    background-color: transparent;
+    margin-right: 60px;
+    margin-top:15px;
+  }
+  .get-started:hover {
+    color: #FFDF2B;
+    transition: 0.5s;
+  }
+  .learn-more {
+    color: #fff;
+    border:  2px solid #fff;
+    padding: 15px 30px;
+    background-color: transparent;
+    font-size:25px;
+  }
+  .learn-more:hover {
+    background-color: #FFDF2B;
+    border: 2px solid #FFDF2B;
+    color:#000;
+    transition: 0.5s;
+  }
+  
+  .payment_second {
+    background-color: #ffffff;
+    color: #000;
+    padding: 50px;
+    text-align: center;
+  }
+
+.payment_info_content{
+    display:grid;
+    grid-template-columns: 1fr 1px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+  .payment_info{
+   text-align: left;
+    padding: 80px;
+  }
+
+  .payment_info h1{
+    text-align:center;
+    font-size: 25px;
+    padding-bottom:40px;
+  }
+
+  .payment_info h2{
+   text-align:center;
+    font-size:20px;
+    padding-top: 40px;
+  }
+
+  .payment_info p{
+    font-size:18px;
+   text-align:left;
+    color:rgb(150, 155, 155)
+  }
+  .checkout_button_container{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px; 
+    margin-left: 00px;
+  }
+
+ .Check-out {
+   font-size:15px;
+    border: 2px solid #000;;
+    padding: 15px 30px; 
+    color:#000;
+  }
+  
+ .Check-out:hover{
+    background-color: #FFDF2B;
+    border: 2px solid #FFDF2B;
+    color:#000;
+    transition: 0.5s;
+  }
+  
+  
+  .middle-line{
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+  }
+
+  .payment_visit_store{
+   flex:1;
+    text-align: center;
+   padding-right: 100px;
+  }
+
+  .payment_visit_store h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .payment_visit_store h3{
+    font-size: 20px;
+    text-align:center;
+    margin:0;
+    padding:0;
+    
+  }
+
+  .payment_visit_store  p{
+    color:rgb(150, 155, 155);
+    font-size:18px;
+    text-align: center;
+    padding-top:10px;
+    padding-left: 10px; 
+  }
+  .payment_picture{
+    max-height:100vh;
+    margin-bottom:50px;
+  }
+.pay-pic{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:10px;
+}
+
+.ask_account{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  min-height: 30vh;;
+
+}
+.ask_acc_pic {
+  padding: 40px 30px;
+}
+.ask_acc_pic img{
+margin-left:100px;
+height:700px;
+}
+
+.ask_create_acc{
+  padding:30px 30px;
+}
+
+.ask_container{
+  border:1px solid #fff;
+  box-shadow:  10px 10px 15px -1px rgba(0,0,0,0.15),
+              -10px -10px 15px -1px rgba(255,255,255,0.7);
+  width:800px;
+  height:700px;
+  text-align:center;
+}
+
+.ask_container h1{
+  margin-top:300px;
+  margin-left:150px;
+  background-color: #ffce2b;
+  width:500px;
+  padding:10px;
+  border-radius: 10px;
+}
+
+.ask_container p{
+  margin-top:50px;
+  font-size:20px;
+  color:#716e6e;
+  margin-bottom:20px;
+}
+
+.pay_registration, .pay_login{
+  padding: 20px;
+  font-size:20px;
+  color:#000;
+  
+}
+
+
+.pay_registration:hover{
+color:red;
+text-decoration:none;
+}
+
+.pay_login:hover{
+  color:blue;
+  text-decoration: none;
+}
+
+
+.payment_option {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 10px;
+  border-radius: 5px;
+  margin-top:15px;
+  padding:100px 50px;
+}
+
+.pay_container {
+  text-align: center;
+  background-color: #fff;
+  height: 800px
+}
+  
+  .pay_container_1,
+  .pay_container_2,
+  .pay_container_3 {
+      padding: 30px; 
+      text-align: center;
+      background-color: #fff;
+      height:700px;
+      width:450px;
+      margin-bottom:10px;
+  }
+
+  .pay_container_1 h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .pay_container_1 p {
+    margin-top:2px;
+    margin-bottom:2px;
+    font-size:18px;
+}
+
+  .click_to_pay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .pay_icon{
+    margin-top:100px;
+    width: 350px;
+    height:150px;
+    justify-content: center;
+  }
+  .pay_now {
+    margin-top: 125px;
+    padding: 15px 18px; 
+    font-size: 20px; 
+    background-color: #FFDF2B;
+    border: 2px solid #FFDF2B;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration:none;
+}
+.pay_now:hover {
+  background-color: #000;
+  color: #FFDF2B;
+  transition: 0.5s;
+}
+
+.pay_container_2 h2{
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+.pay_container_2 p {
+  margin-top:2px;
+  margin-bottom:2px;
+  font-size:18px;
+}
+
+.click_review{
+  padding: 30px 40px;
+  margin-left:30px;
+}
+.pay_review{
+  margin-top:50px;
+  margin-bottom: 87px;
+  margin-left:50px;
+  width: 200px;
+  height:250px;
+  justify-content: center;
+}
+
+.Explore_more{
+  margin-top: 100px;
+  padding: 15px 18px; 
+  font-size: 20px; 
+  background-color: #FFDF2B;
+  border: 2px solid #FFDF2B;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.Explore_more:hover {
+  background-color: #000;
+  color: #FFDF2B;
+  transition: 0.5s;
+}
+
+.pay_container_3 h2{
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+
+.pay_container_3 p {
+  margin-top:2px;
+  margin-bottom:2px;
+  font-size:18px;
+}
+
+.pay_pick_up{
+  margin-top:100px;
+  margin-bottom: 85px;
+  margin-left:40px;
+  width: 300px;
+  height:250px;
+  justify-content: center;
+}
+
+.find_out_more{
+  margin-top: 100px;
+  padding: 15px 18px; 
+  font-size: 20px; 
+  background-color: #FFDF2B;
+  border: 2px solid #FFDF2B;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration:none;
+}
+
+.find_out_more:hover {
+  background-color: #000;
+  color: #FFDF2B;
+  transition: 0.5s;
+}
+  
+  
+
+
+
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RunnersHub | About Us</title>
+  <link rel="stylesheet" href="../css/aboutUs.css">
+  <link rel="stylesheet" href="../css/newnav.css">
+  <link rel="stylesheet" href="../css/newfooter.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<header>
+  <nav>
+      <div class="nav_above">
+          <div class="nav_above_pad">
+              <div class="nav_above_word">
+                  <div class="nav_word_1">
+                      <a href="findStore.html"><span>Find Store</span></a>
+                      <span class="nav_line">|</span>
+                  </div>
+
+                  <div class="nav_word_2">
+                      <a href=""><span>Help</span></a>
+                      <span class="nav_line">|</span>
+                  </div>
+
+                  <div class="nav_word_3">
+                      <a href=""><span>Join Us</span> </a>
+                      <span class="nav_line">|</span>
+                  </div>
+
+                  <div class="nav_word_4">
+                      <a href=""><span>Sign In</span> </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="nav_btm">
+          <div class="logo_container">
+              <a href="indexnew.html"><img src="../img/logo_black3.png" class="logo"></a>
+          </div>
+
+          <div class="nav_text_container">
+              <ul>
+                  <li><a href="joinUs.html">MEMBER</a></li>
+                  <li><a href="">NEW & FEATURED</a></li>
+                  <li><a href="../html/productlisting_all.html">PRODUCTS</a></li>
+                  <li><a href="sale.html">SALE</a></li>
+                  <li><a href="OISB.html">OISB</a></li>
+              </ul>
+          </div>
+          
+          <div class="search_bar">
+              <div>
+                  <div class="nav_icon" id="search_icon"><a href=""><ion-icon name="search-outline"></ion-icon></a></div>
+                  <input type="text" class="search_box">
+              </div>
+          </div>
+
+          <div class="nav_icon_container">
+              <div class="icon_heart" id="icon_icon">
+                  <div class="nav_icon"><a href=""><ion-icon name="heart-outline"></ion-icon></a></div>
+              </div>
+              <div class="icon_bag" id="icon_icon">
+                  <div class="nav_icon"><a href=""><ion-icon name="bag-outline"></ion-icon></a></div>
+              </div>
+          </div>
+      </div>
+  </nav>
+</header>
+
+
+
+  <div class="content">
+    <video autoplay muted loop id="myVideo" width="100%" height="100%">
+      <source src="../vid/aboutus.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="words">
+      <p>Got </p>
+      <p>&nbsp;&nbsp;&nbsp;No</p>
+      <p>&nbsp;Fears</p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Runners</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hub</p>
+    </div>
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+  <div class="sub">
+    <div class="sub1">
+      <img src="../img/aboutus/1.jpg" alt="" width="800px" height="800px">
+      <h1>PURPOSE</h1>
+       <p>Our purpose comes to life through key priorities: We build diverse, equitable, and inclusive teams and champion a transparent, responsible supply chain so people can thrive. We create opportunities for kids and communities to access resources so they can excel. And we innovate and scale more sustainable solutions to help protect our planet. </p>
+    </div>
+    <div class="sub2">
+      <img src="../img/aboutus/2.jpg" alt="" width="100%" height="800px">
+      <h1>MISSION</h1>
+      <p>Athletes do not settle for average. And neither do we. We have a clear mission: To be the best sports brand in the world. Every day, we come to work to create and sell the best sports products in the world, and to offer the best service and consumer experience – and to do it all in a sustainable way. We are the best when we are the credible, inclusive, and sustainable leader in our industry.</p>
+    </div>
+    <div class="sub3">
+      <img src="../img/aboutus/3.jpg" alt="" width="" height="800px">
+      <h1>ATTITUDE</h1>
+      <p>we are rebellious optimists driven by action, with a desire to shape a better future together. We see the world of sport and culture with possibility where others only see the impossible. ‘GOT NO FEARS’ is not a slogan for us. By being optimistic and knowing the power of sport, we see endless possibilities to apply this power and empower all people through action.</p>
+    </div>
+  </div>
+  
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
+
+
+<footer>
+    <div class="f_container">
+        <div class="f_word">
+                <div class="f_acordian_body_left">
+                    <ul>
+                        <li><a href="findStore.html">FIND A STORE</a></li>
+                        <li><a href="joinUs.html">BECOME A MEMBER</a></li>
+                        <li><a href="">STUDENT DISCOUNT</a></li>
+                        <li><a href="">FAMILY PACKAGE</a></li>
+                        <li><a href="">Send a Feedback</a></li>
+                    </ul>
+                </div>
+
+            <div class="f_acordian_body_middle">
+                <div class="f_acordian_body_middle_body">
+                    <ul>
+                        <li class="f_header">GET HELP</li>
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Payment</a></li>
+                        <li><a href="">Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="f_acordian_body_right">
+                <div class="f_acordian_body_right_body">
+                    <ul>
+                        <li class="f_header"><a href="aboutUS.html">ABOUT RUNNERS HUB</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="joinUs.html">Join Us</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="f_icon">
+                <ul>
+                    <li><a href="https://twitter.com/nikestore"><img
+                        src="../img/icon_twitter.png" height="25px" width="25px"></a></li>
+
+                    <li><a href="https://www.instagram.com/nike/?hl=en"><img src="../img/icon_instagram.png" height="25px"
+                        width="25px"></a></li>
+
+                    <li><a href="https://www.youtube.com/user/NIKE"><img src="../img/icon_youtube.png" height="25px"
+                        width="25px"></a></li>
+
+                    <li><a href="https://www.tiktok.com/@nike?lang=en"><img
+                        src="../img/icon_tiktok.png" height="25px" width="25px"></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="f_hr1">
+        <div class="f_bottom">
+            <p class="copyright"><b>&#xf3c5; Malaysia</b> ©Nike. Deadass not my shit.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

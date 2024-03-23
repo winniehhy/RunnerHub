@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../css/newnav.css">
+  <link rel="stylesheet" href="../css/checkout.css">
+  <link rel="stylesheet" href="../css/newfooter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ <script src="../js/checkout.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_above">
+                <div class="nav_above_pad">
+                    <div class="nav_above_word">
+                        <div class="nav_word_1">
+                            <a href="findStore.html"><span>Find Store</span></a>
+                            <span class="nav_line">|</span>
+                        </div>
+
+                        <div class="nav_word_2">
+                            <a href=""><span>Help</span></a>
+                            <span class="nav_line">|</span>
+                        </div>
+
+                        <div class="nav_word_3">
+                            <a href="aboutUS.html"><span>About Us</span> </a>
+                            <span class="nav_line">|</span>
+                        </div>
+
+                        <div class="nav_word_4">
+                            <a href="registration.html"><span>Sign In</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav_btm">
+                <div class="logo_container">
+                    <a href="#"><img src="../img/logo_black3.png" class="logo"></a>
+                </div>
+
+                <div class="nav_text_container">
+                    <ul>
+                        <li><a href="joinUs.html">MEMBER</a></li>
+                        <li><a href="">NEW & FEATURED</a></li>
+                        <li><a href="../html/productlisting_male.html">PRODUCTS</a></li>
+                        <li><a href="sale.htm">SALE</a></li>
+                        <li><a href="OISB.html">OISB</a></li>
+                    </ul>
+                </div>
+                
+                <div class="search_bar">
+                    <div>
+                        <div class="nav_icon" id="search_icon"><a href=""><ion-icon name="search-outline"></ion-icon></a></div>
+                        <input type="text" class="search_box">
+                    </div>
+                </div>
+
+                <div class="nav_icon_container">
+                    <div class="icon_heart" id="icon_icon">
+                        <div class="nav_icon"><a href=""><ion-icon name="heart-outline"></ion-icon></a></div>   
+                    </div>
+                    <div class="icon_bag" id="icon_icon">
+                        <div class="nav_icon"><a href=""><ion-icon name="bag-outline"></ion-icon></a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <div class="check_out_container" id=content>
+    <section class="check_out_main">
+        <div class="check_out_option">
+            <a href="../html/payment.html">
+            <i class="fa-solid fa-arrow-left" ></i></a>
+                <b>What's the expected timeframe to pickup your order ? </b>
+                    <button class="pickup_time_container">
+                    <button class="pick_up_1"  onclick="selectPickup('pick_up_1')"> within 3 to 5 days</button>
+                    <button class="pick_up_2"  onclick="selectPickup('pick_up_2')"> within 7 to 14 days</button>
+                    <button class="pick_up_3"  onclick="selectPickup('pick_up_3')"> within 20 days or above </button>
+        
+
+           <div class="select-menu">
+            <div class="select-btn">
+                <span class="sBtn-text">Choose your pick up point</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <a href="findStore.html">
+                    <i class="fa-solid fa-location-dot"></i></a>  
+                             
+            </div>
+            <ul class="options">
+                <li class="option">
+                    <i class="fa-solid fa-map-pin" style="color:red;"></i>
+                    <span class="option-text">KL East Mall</span>
+                </li>
+                <li class="option">
+                    <i class="fa-solid fa-map-pin"style="color:red;"></i>
+                    <span class="option-text">Plaza Akardia</span>
+                </li>
+                <li class="option">
+                    <i class="fa-solid fa-map-pin" style="color:red;"></i>
+                    <span class="option-text">1 Utama</span>
+                </li>
+                <li class="option">
+                    <i class="fa-solid fa-map-pin" style="color:red;"></i>
+                    <span class="option-text">CITTA Mall</span>
+                </li>
+                <li class="option">
+                    <i class="fa-solid fa-map-pin" style="color:red;"></i>
+                    <span class="option-text">Paradigm Mall</span>
+                </li>
+                <li class="option">
+                    <i class="fa-solid fa-map-pin" style="color:red;"></i>
+                    <span class="option-text">Aeon Shah Alam</span>
+                </li>
+                <li class="option">
+                    <i class="fa-solid fa-map-pin" style="color:red;"></i>
+                    <span class="option-text">EKO Cheras</span>
+                </li>
+                <li class="option">
+                    <i class="fa-solid fa-map-pin" style="color:red;"></i>
+                    <span class="option-text">Pavilion Bukit Jalil</span>
+                </li>
+                <li class="option">
+                    <i class="fa-solid fa-map-pin" style="color:red;"></i>
+                    <span class="option-text">IOI Mall Puchong</span>
+                </li>
+            </ul>
+           </div>    
+    </section>
+    
+    <section class="progress-right">
+
+    <div class="checkout_contact_info">
+        <b> Contact Information</b>
+            <form>
+                <div class="form-contact">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter your first name">
+                </div>
+                <div class="form-contact">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter your last name">
+                </div>
+                <div class="form-contact">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="text" id="phone_number" name="phone_number" placeholder="Enter your phone number">
+                </div>
+            </form>
+    </div>
+    <div class="payMethod_container">
+       <b>Select a <span style="color: #474fe0">Payment</span> method</b>
+    
+       <ul class="payMethod">
+        <li>
+            <input type="radio" name="payMethod" id="first" checked>
+            <label for="first"> Visa / Master Card <img src="../img/visa icon.png" class="icon1">  
+                <img src="../img/mastercard icon.png" class="icon2"></label>
+            
+            <div class="content">
+                <form id="visaForm" >
+                    <div class="form-group">
+                        <label for="visa_card_number">Credit Card Number</label>
+                        <input type="text" id="visa_card_number" name="visa_card_number" placeholder="Enter your Visa card number">
+                    </div>
+                    <div class="form-group">
+                        <label for="visa_expiration_date">Expiration Date (MM/YY)</label>
+                        <input type="text" id="visa_expiration_date" name="visa_expiration_date" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="visa_cvc">CVC (Card Verification Code)</label>
+                        <input type="text" id="visa_cvc" name="visa_cvc" placeholder="Enter CVC">
+                        <button class="pay_text">Pay Now</button>
+                    </div>
+                  </form>
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" name="payMethod" id="second">
+            <label for="second"> PayPal || Alipay || Maybank
+                <img src="../img/paypal icon.png" class="icon3">
+                <img src="../img/alipay icon.png" class="icon4">
+                <img src="../img/mae icon.png" class="icon5">
+            </label>
+            <div class="content">
+                <div class="pay1">
+                  <p> Will redirect to the official website</p> 
+                  <p> PayPal <a href="https://www.paypal.com/my/home" target="_blank">Click here</a></p>
+                  <p> Alipay <a href="https://global.alipay.com/platform/site/product/online-payment" target="_blank"> Click here</a></p>
+                  <p> MayBank <a href="https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/digital_banking/mae_by_maybank2u.page" target="_blank">Click here</a></p>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" name="payMethod" id="third">
+            <label for="third"> Touch N Go 
+                <img src="../img/tng icon.png" class="icon6">
+            </label>
+            <div class="content">
+                <div class="pay2">
+                    <img src="../img/tng qr code.png">
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" name="payMethod" id="forth">
+            <label for="forth"> Pay at Counter <i class="fa-solid fa-map-location-dot"></i></label>
+            <div class="content">
+                <p>Select the option to <a href="findStore.html">  visit our store</a> in person and make your payment there.</p>
+            </div>
+        </li>
+    </ul>
+
+    <img src="../img/checkout-cut.png">
+
+
+
+</section>
+        <script>
+        /*(left)-pick up store location */
+        let selectedPickup = null;
+
+        function selectPickup(pickupClass) {
+        // Deselect the previously selected button
+        if (selectedPickup) {
+      document.querySelector('.' + selectedPickup).classList.remove('selected');
+    }
+
+        // Select the clicked button
+        document.querySelector('.' + pickupClass).classList.add('selected');
+        selectedPickup = pickupClass;
+  }
+
+  const optionMenu = document.querySelector(".select-menu"),
+        selectBtn = optionMenu.querySelector(".select-btn"),
+        options = optionMenu.querySelectorAll(".option"),
+        sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+     selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+
+     options.forEach((option) => {
+      option.addEventListener("click", () => {
+      let selectedOption = option.querySelector(".option-text").innerText; 
+      sBtn_text.innerText = selectedOption;
+      optionMenu.classList.remove("active");
+  });
+});
+
+
+
+
+          </script>
+          
+ 
+
+
+
+
+
+
+
+</body>
+</html>
+

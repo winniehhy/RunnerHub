@@ -1,0 +1,325 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+  }
+  
+body{
+  justify-content: center;
+}
+
+ .registration_home{
+  position: relative;
+  width:100%;
+  height:100vh;
+  background: url(../img/reg-runner.png) no-repeat;
+  background-size:cover;
+  background-position: center;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:100px 300px 0;
+ }
+
+ .registration_home .registration_content{
+  max-width: 500px;
+  color:#000;
+
+ }
+
+ .registration_content h2{
+   font-size:30px;
+   letter-spacing: 2px;
+   font-weight:800;
+   
+ }
+ .registration_content p{
+  margin: 10px 0 40px;
+ }
+
+ .registration_content a{
+  color: #000;
+  text-decoration:none;
+  border: 1px solid #000;
+  font-weight:300;
+  border-radius: 5px;
+  padding:10px 20px;
+  transition:0.5s
+ }
+
+ .registration_content a:hover{
+   background-color:#FFDF2B;
+   border-radius: 5px;
+   color:#7a7878;
+   transition:0.5s;
+   border:none;
+ }
+
+ .registration_home .registration-wrapper-login{
+   position:relative;
+   width:440px;
+
+ }
+
+ .registration-wrapper-login h2{
+   font-size: 25px;
+   color:#000;
+   text-align: center;
+ }
+
+ .registration-wrapper-login .input-box{
+   position: relative;
+   width:100%;
+   height:50px;
+   margin:40px 0;
+ }
+
+ .input-box input{
+  width:100%;
+  height:100%;
+  background: transparent;
+  border: 1px solid #000;
+  outline:none;
+  border-radius:10px;
+  font-size:20px;
+  color:#000;
+  padding:0 5px 0 45px;
+ }
+
+ .input-box label{
+  position:absolute;
+  top:50%;
+  left:45px;
+  transform:translateY(-50%);
+  font-size:20px;
+  color:#000;
+  pointer-events:none;
+  transition:0.5s;
+ }
+
+ .input-box input:focus~label,
+ .input-box input:valid~label{
+  font-size:18px;
+  top:-14px;
+  left:17px;
+ }
+
+ .input-box .icon{
+  position:absolute;
+  top:14px;
+  left:15px;
+  font-size:20px;
+  color:#000;
+  cursor:pointer;
+ }
+
+.registration-wrapper-login .remember-forgot{
+  font-size:20px;
+  color:#000;
+  font-weight: 300;
+  margin:-25px 0 15px;
+  display:flex;
+  justify-content: space-between;
+}
+.remember-forgot label input{
+  accent-color:#373636;
+  margin-right:3px;
+}
+
+.remember-forgot a{
+  color:#000;
+  text-decoration:none;
+}
+
+.remember-forgot a:hover{
+  text-decoration:underline
+}
+
+.registration-wrapper-login .reg_btn{
+  width:100%;
+  height:50px;
+  border:none;
+  outline:none;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:25px;
+  color:#fff;
+  font-weight:300;
+  background-color:#000;
+}
+.registration-wrapper-login .reg_btn:hover{
+  background-color: #FFDF2B;
+  border:none;
+  color:#000;
+}
+
+.registration-wrapper-login .register-link{
+  font-size: 20px;
+  color:#000;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.register-link p a{
+  color: #000;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.register-link p a:hover{
+  text-decoration:underline;
+}
+
+.registration_home .registration-wrapper-signup{
+  position:relative;
+  width:440px;
+  }
+
+.registration-wrapper-signup h2{
+  font-size: 25px;
+  color:#000;
+  text-align: center;
+}
+
+.registration-wrapper-signup .input-box{
+  position: relative;
+  width:100%;
+  height:50px;
+  margin:40px 0;
+  
+}
+
+
+.registration-wrapper-signup .remember-forgot{
+ font-size:20px;
+ color:#000;
+ font-weight: 300;
+ margin:-25px 0 15px;
+ display:flex;
+ justify-content: space-between;
+}
+.registration-wrapper-signup .reg_btn{
+ width:100%;
+ height:50px;
+ border:none;
+ outline:none;
+ border-radius:20px;
+ cursor:pointer;
+ font-size:25px;
+ color:#fff;
+ font-weight:300;
+ background-color:#000;
+}
+.registration-wrapper-signup .reg_btn:hover{
+ background-color: #FFDF2B;
+ border:none;
+ color:#000;
+}
+
+.registration-wrapper-signup .register-link{
+ font-size: 20px;
+ color:#000;
+ text-align: center;
+ margin: 30px 0;
+}
+
+.news-part{
+ display:flex;
+ align-items: center;
+ padding: 30px 60px;
+}
+.new-title{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:50px;
+}
+.new-title img{
+  width:500px;
+  margin-left:100px;
+  margin-right:400px;
+  
+}
+
+.new-title h1{
+  text-align: right;
+  letter-spacing:3px;
+  line-height: 40px;
+  font-size:20px;
+  font-weight:700;
+}
+
+.news {
+  color:rgb(127, 193, 251)
+}
+.news-title h2{
+  font-size: 50px;
+   margin-left:150px;
+   letter-spacing:3px;
+   font-weight:700;  
+}
+
+.news-container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-top:100px;
+}
+
+.news-card{
+height:440px;
+width:400px;
+margin:10px;
+box-shadow:5px 5px 20px black;
+border-radius:10px;
+margin-right:80px;
+position:relative;
+
+}
+.news-card img{
+  height: 440px;
+  width:400px;
+}
+
+.news-text{
+  width: 400px;
+  height:105px;
+  padding:5px;
+  box-sizing: border-box;
+  position:absolute;
+  bottom:0;
+  background:rgba(27,27,27,0.5) ;
+  color:#fff;
+  transition:bottom 1.0s ease;
+}
+
+.news-text p{
+  margin:10px;
+  font-size:20px;
+  opacity:1;
+  transition: visibility 0.8s ease;
+}
+.news-text span p{
+  font-weight:bold;
+}
+
+.news-card:hover .news-text{
+  bottom:0;
+  height:350px;
+}
+
+.news-card:hover .news-text ,
+.news-card:hover .news-text p {
+  visibility: visible;
+  opacity: 1;
+  transition:0.5s;
+}
+.news-card:hover{
+  cursor:pointer;
+}
+
+
+
+
+

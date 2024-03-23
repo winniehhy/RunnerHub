@@ -1,0 +1,303 @@
+
+.check_out_container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top:50px;
+  min-height:100vh;
+  
+}
+
+.check_out_main{
+  grid-column: 1;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+  margin-left:0;
+
+}
+
+.check_out_option i {
+  margin-right: 50px;
+  color:#000;
+  font-size:25px;
+}
+
+.check_out_option b{
+  font-size: 20px;
+}
+
+.pickup_time_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top:50px;
+}
+
+.pick_up_1,
+.pick_up_2,
+ .pick_up_3 {
+ 
+  background-color:#000;
+  color:#fff;
+  border: 0.5px solid #000; 
+  border-radius: 30px;
+  padding: 20px 20px; 
+  margin: 5px;
+  transition:0.5s;
+  margin-left:30px;
+}
+
+.pick_up_1:hover,
+.pick_up_2:hover,
+.pick_up_3:hover,
+.pick_up_1.selected,
+.pick_up_2.selected,
+.pick_up_3.selected {
+  border: 1px solid #838282; 
+  background-color: #fff;
+  color:#000;
+}
+
+.select-menu{
+  width:500px;
+  margin:50px 50px;
+  
+}
+
+.select-menu .select-btn{
+  display:flex;
+  height: 55px;
+  background-color: #fff;
+  padding:20px;
+  font-size: 20px;
+  font-weight:600;
+  border-radius:8px;
+  align-items:center;
+  cursor:pointer;
+  justify-content:space-between;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.select-btn i{
+  font-size:18px;
+  transition: 0.5s;
+}
+
+.select-menu.active .select-btn .fa-chevron-down{
+  transform: rotate(-180deg) ;
+  margin-right:0;
+  margin-left:0;
+ 
+}
+.select-menu.active .select-btn .fa-location-dot {
+  transform:none;
+  margin-left:0;
+}
+
+
+.select-menu .options{
+  position:relative;
+  padding:20px;
+  margin-top:10px;
+  border-radius: 8px;
+  background:#fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display:none;
+}
+.select-menu.active .options{
+  display: block;
+}
+.options .option{
+  display:flex;
+  height:55px;
+  cursor:pointer;
+  align-items:center;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: #fff;
+
+}
+.options .option:hover{
+  background:#838282;
+}
+.option i{
+  font-size:15px;
+  margin-right:30px;
+}
+
+.option .option-text{
+  font-size:20px;
+  color:#000;
+}
+
+.progress-right{
+  width:600px;
+  padding:10px 10px;
+}
+
+.checkout_contact_info b{
+  font-size:20px;
+  text-align:left;
+  margin-left:30px;
+}
+
+.form-contact{
+  margin-top:30px;
+  margin-bottom:20px;
+  width:400px;
+  margin-left:30px;
+}
+
+.form-contact label{
+  display:block;
+  margin-bottom:10px;
+  font-weight:700;
+}
+
+.form-contact input{
+  width: 100%;
+  padding:10px;
+  border: 0.5px solid #cfcfcf; 
+  border-radius: 5px;
+  font-size:20px;
+}
+
+.payMethod_container{
+  width:400px;
+  height:100px;
+  border-radius:8px;
+  padding:30px 10px;
+}
+
+.payMethod_container b{
+  font-size: 20px;
+  margin-left:20px;
+}
+
+.payMethod_container .payMethod{
+  margin:30px 80px;
+  width:600px;
+  margin-left:0;
+}
+
+.payMethod li{
+  list-style: none;
+  width:100%;
+  margin:20px;
+  border-radius: 8px;
+  border:1px solid #000;
+  background: #ffffff;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                  -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+.payMethod li label{
+     display:flex;
+     align-items: center;
+     padding:20px;
+     font-size:20px;
+     font-weight:500;
+     cursor:pointer;   
+}
+
+.icon1{
+  width:30px;
+  height:15px;
+  margin-left:300px;
+}
+ .icon2 {
+  width:30px;
+  height:15px;
+  margin-left:10px;
+
+}
+.icon3{
+  width:30px;
+  height:25px;
+  margin-left:170px;
+}
+
+.icon4 ,.icon5{
+  width:55px;
+  height:35px;
+  margin-left:0;
+  margin:0;
+  padding:0;
+}
+
+.icon6{
+  width:30px;
+  height:30px;
+  margin-left:400px;
+}
+
+.payMethod label i{
+  margin-left:380px;
+}
+
+input[type="radio"]{
+  display:none;
+}
+
+.payMethod .content{
+  color:#555;
+  padding:0 10px;
+  line-height:26px;
+  max-height:0;
+  overflow:hidden;
+  transition: max-height 0.5s, padding 0.5s;
+
+}
+
+.payMethod input[type="radio"]:checked + label + .content {
+  max-height:400px;
+  padding: 10px 10px 20px;
+}
+
+.form-group, .pay1, .pay2 {
+  padding: 10px 20px;
+}
+.pay2 img{
+  width:300px;
+  height:300px;
+}
+
+.form-group input{
+  padding:10px 20px;
+}
+.form-group button{
+   margin-left:50px;
+   padding:5px 8px;
+   border-radius:5px;
+   border:none;
+   background:#9b9b9b;
+   color: #fff;
+   font-size:18px;
+   transition:0.5s;
+}
+
+.form-group button:hover{
+  color:#fff;
+  background:#000;
+}
+
+.pay1 a{
+  color:#000;
+  text-decoration:none;
+  font-weight: bold;
+}
+.pay1 a:hover{
+  text-decoration:underline;
+  color:#e89b1f;
+}
+.content a{
+  color:#000;
+  text-decoration:none;
+  font-weight: bold;
+}
+.content a:hover{
+  text-decoration:underline;
+  color:#e89b1f;
+}
